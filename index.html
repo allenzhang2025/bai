@@ -1,20 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>Hello Losers...</title>
+    <title>
+      Allen's favorite Pokemon
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    <style>
+      .mySlides {display:none;}
+      </style>      
   </head>
+
   <body>
-    <h1>Hello Losers...</h1>
-    <h2>Here are some cool photos I found or whatever...</h2>
-    <img src="cat.jpg">
-    <br>
-    <audio controls>b0nk
-      <source src="bonk.mp3" type="audio/mp3">
-    </audio>
-    <h2>Enjoy this photo or else>:/</h2>
-    <img src="parv.jpeg" style="width:600px;height:450px;">
-    <p>Did you enjoy?</p>
+    <script>
+      function ShowNext5() {
+          document.getElementById('5C').style.display = 'block';
+        }
+      </script>
+    <script>
+      function ShowNext4() {
+          document.getElementById('4P').style.display = 'block';
+        }
+      </script>
+    <script>
+      function ShowNext3() {
+          document.getElementById('3B').style.display = 'block';
+        }
+      </script>
+    <script>
+      function ShowNext2() {
+          document.getElementById('2S').style.display = 'block';
+        }
+      </script>            
+    <script>
+      function ShowNext1() {
+          document.getElementById('1P').style.display = 'block';
+        }
+      </script>
+    
+    <h1>
+      Hi there... Wondering what my favorite pokemon are?
+    </h1>
+    <h2>
+      Well, you're in the right place! Here are my top 5 Pokemon:
+    </h2>
+
+    <button onclick="ShowNext5()">
+      Reveal number 5...
+    </button>
+    
+
+
+    <DIV ID="5C" STYLE="display:none">
+      <h3>5. Cubchoo</h3>
+      <div class="row">
+        <div class="column">
+          <img src="cubchoo.png" style="height:500px; float:left; margin-right:50px;">
+        </div>
+        <div class="column">
+          <img src="cubchoo_2.png" style="height:500px; float:left; margin-right:50px;">
+        </div>
+        <div class="column">
+          <img src="cubchoo_3.gif" style="height:500px; float:left">
+        </div>
+      <br clear=all>
+      <p>
+        Why is Cubchoo on here you ask? 
+        Just look at her derpy snot. She doesn't know anything; head empty vibes.
+      </p>
+      <br>
+    <button onclick="ShowNext4()">Here is number 4...</button>
+    </div>
+
+
+
+    <div ID="4P" STYLE="display:none">
+      <h3>4. Pachirisu</h3>
+        <div class="row">
+          <div class="column">
+            <img src="pachirisu.png" style="height:500px; float:left; margin-right:50px;">
+          </div>
+          <div class="column">
+            <img src="pachirisu_2.png" style="height:500px; float:left; margin-right:50px;">
+          </div>
+          <div class="column">
+            <img src="pachirisu_3.gif" style="height:500px; float:left">
+          </div>
+        </div>
+      <br clear=all>
+      <p>
+        Next up, we have Pachirisu. He's so adorbs and electric. Best electric rodent. Case closed.
+      </p>
+      <br>
+    <button onclick="ShowNext3()">Now for number 3...</button>
+    </div>
+
+    
+    <div ID="3B" STYLE="display:none">
+      <h3>3. Buneary</h3>
+      <div class="row">
+        <div class="column">
+          <img src="buneary.png" style="height:500px; float:left; margin-right:50px;">
+        </div>
+        <div class="column">
+          <img src="buneary_2.png" style="height:500px; float:left; margin-right:50px;">
+        </div>
+        <div class="column">
+          <img src="buneary_3.gif" style="height:500px; float:left">
+        </div>
+      </div>
+      <br clear=all>    
+      <p>
+        Buneary is so cute. She is graceful and beautiful and pretty and elegant 
+        and amazing and epic. Love her vibes.
+      </p>
+      <br>
+    <button onclick="ShowNext2()">Click here to view number 2...</button>
+    </div>
+
+    
+    <div ID="2S" STYLE="display:none">
+      <h3>2. Shaymin</h3>
+      <div class="row">
+        <div class="column">
+          <img src="shaymin.png" style="height:500px; float:left; margin-right:50px;">
+        </div>
+        <div class="column">
+          <img src="shaymin_2.png" style="height:500px; float:left; margin-right:50px;">
+        </div>
+        <div class="column">
+          <img src="shaymin_3.gif" style="height:500px; float:left">
+        </div>
+      </div>
+      <br clear=all>    
+      <p>
+        If you don't think Shaymin is the cutest legendary, you're sorely mistaken. 
+        He is babbu and tiny. Love it!
+      </p>
+      <br>
+    <button onclick="ShowNext1()">Now, for my all time favorite...</button>
+    </div>
+
+    
+    <div ID="1P" STYLE="display:none">
+      <h3><strong>1. Piplup!!!</strong></h3>
+      <div class="w3-content w3-display-container">
+        <img class="mySlides" src="piplup.png" style="height:500px">
+        <img class="mySlides" src="piplup_2.png" style="height:500px">
+        <img class="mySlides" src="piplup_3.webp" style="height:500px">
+      
+        <button class="w3-button w3-black w3-display-left" onclick="plusdivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+      </div>
+      
+      <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+      
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+      
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        x[slideIndex-1].style.display = "block";  
+      }
+      </script>
+        <p>
+          Finally, in first place, we have Piplup! He is everything to me. No other comments.
+        </p>
+      </div>
   </body>
 </html>
